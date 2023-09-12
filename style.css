@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+      "head"
+      "sub"
+      "ads"
+      "cat-1"
+      "cat-long"
+      "cat-2"
+      ;
+  }
+
+  section,
+article {
+  margin: 0px 15% 0px 15%;
+}
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-area:head ;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+  .sub-nav ul {
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+  }
+
+  .sub-nav ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+  .sub-nav ul li a{
+    color: #fff;
+  }
+  .sub-nav ul li a:hover{
+    text-decoration: underline;
+  }
+.search-jam{
+    color: #000000;
+    border: none;
+    width: 400px;
+    height: 25px;
+    padding: 0 8px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav2{
+    margin-top: 60px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: sub;
+}
+
+.nav2 ul{
+    padding: 20px 0;
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav2 ul li:hover{
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+}
+
+.nav2 button{
+    background-color: #464646;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+}
+.nav2 button:hover{
+    background-color: #999;
+    transition: .5s ease-in-out;
+}
+
+  section { 
+    align-items: center;
+    grid-area: ads;
+  }
+  section img {
+    width: 100%;
+  }
+  article {
+    align-items: center;
+    grid-area: cat-1;
+    padding: 0 20px;
+  }
+  .category img{
+    width: 100%;
+  }
+
+  .catcat{
+    margin: 30px 0 80px 0;
+  }
+  .cat {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .category1{
+    display: grid;
+   text-align: center;
+  }
+.category-long{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+.banner img {
+    width: 966px;
+}
+
+.nweek{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform:capitalize;
+    color: #6d6e6e;
+    font-weight: 600;
+}
+
+.big-small{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 190px;
+    padding-bottom: 70px;
+}
+
+.big-small ul li{
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #6d6e6e;
+    font-weight: 700;
+}
+
+.small ul .red{
+    font-size: 15px;
+    color: #6d6e6e;
+}
+.shop-togo{
+  margin-top: -30px;
+}
+.shop{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: #464646;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.shop-togo p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #464646;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: .5px;
+  margin-bottom: 30px;
+}
+.top-brand{
+  display: flex;
+  justify-content: left;
+  padding: 50px 60px 0 60px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6d6e6e;
+}
+
+.top-brands{
+  width: 50%;
+}
+
+.brands{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 20px 60px 0 60px;
+  gap: 10px;
+}
+
+.brands ul{
+  margin-top: 20px;
+  line-height: 28px;
+  opacity: .7;
+  font-size: .875rem;
+}
+
+
+.foot-img{
+margin-bottom: -10px;
+}
+.foot-img img{
+  width: 100%;
+}
+
+footer{
+  display: flex;
+  background-color: #000 ;
+  color: hsla(0,0%,100%,.7);
+  padding: 50px 50px;
+  gap: 60px;
+  font-family: 'Times New Roman', Times, serif;  
+  text-align: left;
+}
+
+.foot-1 .zalora-p{
+  font-size: 13px;
+  text-align: left;
+  line-height: 25px;
+}
+.foot-1 svg{
+  margin-bottom: 25px;
+}
+.foot-1{
+  font-size: 10px;
+  width: 30%;
+
+}
+.strong{
+  font-weight: 700;
+}
+
+.foot-2 ul{
+  font-size: 13px;
+  font-weight: 100;
+  list-style: none;
+  margin-top: 25px;
+}
+.foot-2{
+  font-weight: 700;
+  color: #fff;
+}
+
+.foot-2 ul li{
+  line-height: 30px;
+}
+.foot-2 a{
+  text-decoration: none;
+  color: hsla(0,0%,100%,.7);
+}
+
+.foot-2 a:hover{
+  text-decoration: underline;
+  transition: ease-in-out .3s;
+}
+.foot-3{
+   width: 30%;
+}
+.foot-3 .p-text{
+  font-size: 13px;
+  line-height: 25px;
+}
+.contact{
+  margin-bottom: 25px;
+}
+
+.yellow{
+  color: yellow;
+}
+
+
+form{
+  display: grid;
+  margin-top: 25px;
+}
+
+form label{
+  font-size: 13px;
+}
+
+form input{
+  margin: 10px 8px 30px 0 ;
+  width: 100%;
+  height: 35px;
+  border: none;
+}
+
+.btn{
+  display: flex;
+  justify-content:center;
+  gap: 60px;
+  width: 100%;
+}
+
+.btn button{
+ width: 100%;
+ height: 35px;
+ background-color: transparent;
+ border: 1px solid #fff;
+ color: #fff;
+ margin-bottom: 10px;
+}
+
+.btn button:hover{
+  color: #000;
+  background-color: #fff;
+  transition: ease-in-out .5s;
+}
+
+.foot-3 p{
+  font-size: 13px;
+}
+
+.foot-3 p a{
+  text-decoration: none;
+  color: hsla(0,0%,100%,.7);
+}
+.foot-3 p a:hover{
+  text-decoration: underline;
+  transition: ease-in-out.5s;
+}
+
+
+.find{
+  background-color: #000;
+  color: #fff;
+  padding: 0px 50px 50px 50px;
+}
+
+.find .find-us{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.find ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 20px 10px;
+}
+.find i{
+  font-size: 30px;
+}
+
+.foot-footer{
+  display: flex;
+  padding: 0 50px 30px 50px;
+  justify-content: space-between!important;
+  background-color: #000;
+  color: hsla(0,0%,100%,.7);
+}
+.foooter-2 :nth-child(2){
+display: flex;
+justify-content: end;
+
+}
+li{
+  letter-spacing: 1px;
+  list-style: none;
+  font-size: 13px;
+}
+a{
+  text-decoration: none;
+  color: #464646;
+  font-size: 14;
+}
+a:hover{
+  text-decoration: underline;
+  opacity: 1;
+  font-weight: 300;
+  color: #000;
+}
+
+.foooter-1 a{
+  text-decoration: none;
+  color: hsla(0,0%,100%,.7);
+}
+.foooter-1 a:hover{
+  text-decoration: underline;
+}
+
+.line{
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 90px;
+}
+
+.sprint{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 60px;
+  gap: 20px;
+}
+
+.sprint img{
+  margin-top: 10px;
+}
+
+.sprint span{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sprint :nth-child(5){
+margin-left: 250px;
+}
+
+
+.l-text{
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #464646;
+}
+
+.s-text{
+  margin-top: 20px;
+  font-size: 13px;
+  color: #464646;
+}
